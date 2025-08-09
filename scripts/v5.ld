@@ -47,7 +47,7 @@ SECTIONS
 .text : {
    KEEP (*(.vectors))
    /* boot data should be exactly 32 bytes long */
-   *(.boot_data)
+   KEEP (*(.boot_data))
    . = 0x20;
    *(.boot)
    . = ALIGN(64);

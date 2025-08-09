@@ -66,7 +66,7 @@ system_deps = [
   '-nostartfiles', # we still need to implement some newlib stubs
   '-lstdc++exp',
 ]
-add_global_link_arguments( system_deps, language: 'c')
+add_global_link_arguments(system_deps, language: 'c')
 add_global_link_arguments(system_deps, language: 'cpp')
 
 # configuration of the standard library

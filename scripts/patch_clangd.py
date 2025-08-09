@@ -48,6 +48,7 @@ def main():
 
     # Construct the six include strings.
     outputs = [
+        f"-isystem{base_dir}/lib/clang/19/include",
         f"-isystem{base_dir}/lib/gcc/arm-none-eabi/{gcc_version}/../../../../arm-none-eabi/include/c++/{gcc_version}",
         f"-isystem{base_dir}/lib/gcc/arm-none-eabi/{gcc_version}/../../../../arm-none-eabi/include/c++/{gcc_version}/arm-none-eabi/thumb/v7-a+simd/hard",
         f"-isystem{base_dir}/lib/gcc/arm-none-eabi/{gcc_version}/../../../../arm-none-eabi/include/c++/{gcc_version}/backward",
